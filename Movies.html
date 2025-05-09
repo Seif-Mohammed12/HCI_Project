@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Notflix | Movies</title>
+  <link rel="stylesheet" href="MoviesPage.css" />
+  <link rel="stylesheet" href="HomePage.css" />
+</head>
+<body>
+
+    <div id="stars" class="stars"></div>
+
+  <nav class="navbar">
+    <div class="navbar-left">
+      <img src="Assets/notflix.png" alt="Notflix Logo" class="navbar-logo" />
+      <ul class="navbar-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Movies</a></li>
+      </ul>
+    </div>
+    <div class="navbar-right">
+      <button class="signin-btn">Sign In</button>
+      <button class="join-btn">Join Notflix</button>
+    </div>
+  </nav>
+
+  <main class="movies-page">
+    <div class="movies-header">
+      <input type="text" id="movieSearch" placeholder="Search movies..." />
+      <div class="category-tabs">
+        <button class="tab active" data-category="all">All</button>
+        <button class="tab" data-category="comedy">Comedy</button>
+        <button class="tab" data-category="drama">Drama</button>
+        <button class="tab" data-category="action">Action</button>
+        <button class="tab" data-category="animation">Animation</button>
+      </div>
+    </div>
+
+    <div class="carousel-container">
+        <button class="carousel-btn left" id="scrollLeft">&#10094;</button>
+        
+        <div class="movie-carousel" id="movieCarousel">
+          <!-- Movie cards will be inserted by JS -->
+        </div>
+      
+        <button class="carousel-btn right" id="scrollRight">&#10095;</button>
+      </div>
+      
+  </main>
+
+  <script src="Movies.js"></script>
+</body>
+</html>
